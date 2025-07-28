@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Bungee&family=Creepster&family=DM+Serif+Text:ital@0;1&family=Nosifer&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ruslan+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Berkshire+Swash&family=Bungee&family=Creepster&family=DM+Serif+Text:ital@0;1&family=Nosifer&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Distressed&family=Rubik+Wet+Paint&family=Ruslan+Display&family=Russo+One&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Orbitron', sans-serif;
+  background: linear-gradient(to bottom right, #000020, #000010);
+  color: #ffffff;
+  overflow-x: hidden;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding: 20px 10px;
+  background: url('final.jpg') center center / cover no-repeat;
+  background-attachment: fixed;
+  color: #ffffff;
+}
+
+/* Header Logo */
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ff0055;
+  letter-spacing: 2px;
+  font-family: "Cormorant Garamond", serif;
+}
+
+/* Main Section */
+main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 0;
+}
+
+.text-section h1 {
+  font-size: 7vw;
+  line-height: 1.2;
+  font-family: "Rubik Distressed", system-ui;
+  color: #bdf7ec;
+  font-weight: 100;
+}
+
+.coming-soon{
+  margin-top: 20px;
+  display: inline-block;
+  background: #FFD700;
+  color: #000;
+  padding: 10px 25px;
+  font-weight: bold;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #ffdc00 ;
+}
+.coming-soon:hover {
+  color: #00FFF0;
+}
+
+.character-image img {
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: 0 0 30px #00ffff55;
+}
+
+/* Side Icons */
+.icons {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.icon {
+  background: #111;
+  padding: 10px 15px;
+  color: #00FFFF;
+  font-size: 18px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #00f0ff;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.icon:hover {
+  color: #00FFF0;
+  transform: scale(1.2) rotate(5deg);
+  text-shadow: 0 0 8px #00FFF0;
+}
+
+
+/* Footer */
+footer {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  flex-wrap: wrap;
+  color: #f9fffb;
+  font-weight: 600;
+}
+
+.footer-item {
+  flex: 1;
+  min-width: 200px;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.footer-item strong {
+  color: #ededed;
+  font-weight: bold;
+  text-shadow: 0 0 10px rgba(191, 218, 139, 0.662);
+  
+}
+
+.footer-item span {
+  display: block;
+  margin-top: 5px;
+  text-shadow: 0 1px 4px rgba(240, 209, 209, 0.6);
+}
+
+@media (max-width: 1024px) {
+  .text-section h1 {
+    font-size: 5rem;
+  }
+
+  .logo {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 10px;
+  }
+
+  .text-section h1 {
+    font-size: 3.5rem;
+    text-align: center;
+  }
+
+  .coming-soon {
+    padding: 8px 20px;
+    margin-left: 80px;
+  }
+
+  .icons {
+    right: 10px;
+    top: auto;
+    bottom: 20px;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    gap: 20px;
+    transform: none;
+  }
+
+  .icon {
+    font-size: 16px;
+    padding: 8px 12px;
+  }
+
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-item {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .text-section h1 {
+    font-size: 2.3rem;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  .coming-soon {
+    font-size: 14px;
+    padding: 6px 16px;
+    margin-left: 40px;
+  }
+
+  .icon {
+    font-size: 14px;
+    padding: 6px 10px;
+    margin-left: 15px;
+  }
+
+  .footer-item {
+    font-size: 12px;
+    margin-top: 10px;
+  }
+  .footer{
+    margin-top: 100px;
+  }
+}
